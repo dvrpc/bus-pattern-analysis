@@ -5,7 +5,7 @@ library(tidyverse)
 readRenviron(paste0(dirname(rstudioapi::getActiveDocumentContext()$path), "/.Renviron"))
 
 # read variables from Renviron
-import_folder <- Sys.getenv("export_folder") 
+import_folder <- Sys.getenv("import_folder") 
 export_folder <- Sys.getenv("export_folder") 
 
 pattern_time_matrix <- read.csv(paste0(export_folder,"/pattern_time_matrix.csv"))
@@ -54,6 +54,13 @@ matrix_with_geom_filtered$evening_t <- ifelse(matrix_with_geom_filtered$evening 
 
 matrix_with_geom <- st_sf(matrix_with_geom_filtered, sf_column_name = "line_geometry")
 matrix_without_geom <- matrix_with_geom %>% st_set_geometry(NULL)
+
+colnames(matrix_without_geom)
+# reorganize columns:
+matrix_without_geom <- matrix_without_geom %>% select(stops_id,
+                                                      early_am,am_rush,midday,pm_rush,evening,
+                                                      early_am_t,am_rush_t,midday_t,pm_rush_t,evening_t)
+
 
 # export files
 write_sf(matrix_with_geom , paste0(export_folder,"/matrix_mapped.shp"))
