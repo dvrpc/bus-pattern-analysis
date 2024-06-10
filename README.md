@@ -64,7 +64,12 @@ MISSING TEXT HERE
 ### flagged_matrix.csv
 In addition to the shapefile, you can review the flagged chart without GIS software using this file. The table is structured like this:
 
-|
+| stops_id | early_am | am_rush | midday | pm_rush | evening | early_am_t | am_rush_t | midday_t | pm_rush_t | evening_t |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 001_to_002 | pattern | pattern | pattern | pattern | pattern | FALSE | TRUE | TRUE | FALSE | FALSE |
+
+Columns two to six provide the speed pattern of a specific segment thrughout the day. The last five columns indicate if the team flagged one or more of the time intervals as abnormal. 
+The file allows filtering of abnormal patterns/segments and conditional formatting of result if needed.
 
 ## Contributing
 
