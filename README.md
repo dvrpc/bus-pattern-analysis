@@ -37,7 +37,20 @@ These two code files utilize these three R packages:
 
 ## Usage
 
-MISSING EXPLANATION
+1. Set up (create) the import and export folders for each specific bus route and direction reviewed<br><br>
+2. Download five CSV files (per direction, per route) from the Swift.ly speed map page. Each file should align with the preferred time-intervals buckets. This step requires an active Swift.ly user. For further instructions regarding manual Swift.ly downloads and/or time intervals, please review the attached full how-to guide (**PAGES TO REFER TO MISSING**)<br><br>
+3. Follow the setup steps, including cloning the repository and creating the .Renviron file.<br><br>
+4. Run ‘part 1’ R code:
+   - dddd
+   - sss
+   - ccc
+
+Manually tagging the dictionary 
+
+Running ‘part 2’ to get the tagged matrix and shapefile
+
+Optional- conditional formatting within Excel
+
 
 ## Contributing
 
