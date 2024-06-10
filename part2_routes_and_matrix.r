@@ -8,7 +8,6 @@ readRenviron(paste0(dirname(rstudioapi::getActiveDocumentContext()$path), "/.Ren
 import_folder <- Sys.getenv("export_folder") 
 export_folder <- Sys.getenv("export_folder") 
 
-
 pattern_time_matrix <- read.csv(paste0(export_folder,"/pattern_time_matrix.csv"))
 
 pattern_time_matrix <- pattern_time_matrix %>%
