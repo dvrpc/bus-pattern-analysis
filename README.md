@@ -45,15 +45,16 @@ These two code files utilize these three R packages:
    - **Septa routes points shapefile**<br>
      Can be downloaded from the DVRPC data catalog at: https://catalog.dvrpc.org/dataset/septa-transit-stops <br><br>
 4. Follow the setup steps above, including cloning the repository and creating the .Renviron file.<br><br>
-5. Run ‘part 1’ R code:<br>
+5. Run ‘part 1’ R code:<br><br>
    - Open *part1_patterns_time_matrix_and_dict.r* from the cloned repository directly in Rstudio
    - Run the code
    - Expected output to export folder: pattern_time_matrix.csv, pattern_dictionary.csv<br><br>
-6. Manually flag abnormal patterns in the exported pattern dictionary CSV file. Write 'T' under the *flagged_pattern* column to flag a pattern, then save the file.<br><br>
+6. Manually flag abnormal patterns in the exported pattern dictionary CSV file.<br>Write 'T' under the *flagged_pattern* column to flag a pattern, then save the file. Flagging is to be carried by the planning/reviewing team's discretion. See the overall how-to guide by DVRPC's OTBP team for recommendations and a detailed explanation.<br><br>
 7. Run ‘part 2’ R code:<br>
-   - aa
-   - bb
-   - ccc to get the tagged matrix and shapefile
+   - Open *part2_routes_and_matrix.r* from the cloned repository directly in Rstudio
+   - number of SEPTA???
+   - Run the code
+   - Expected output to export folder: matrix_mapped.shp, flagged_matrix.csv<br><br>
 
 ## Reviewing pattern analysis output
 
