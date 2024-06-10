@@ -20,13 +20,15 @@ Missing intro about this project to be added.
   ```cmd
   readRenviron(paste0(dirname(rstudioapi::getActiveDocumentContext()$path), "/.Renviron"))
   import_folder <- Sys.getenv("import_folder")
+  export_folder <- Sys.getenv("export_folder")
   ```
   
-- Install all libraries before runnning them for the first time:
+- Install all libraries before running them for the first time:
   ```cmd
   install.packages("name_of_package")
   ```
 ### Dependencies
+
 
 - **Tidycensus** <br>
   This code utilized the get_acs function from *tidycensus* library. <br>
