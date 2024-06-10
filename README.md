@@ -62,7 +62,9 @@ These two code files utilize these three R packages:
 MISSING TEXT HERE
 
 ### flagged_matrix.csv
-In addition to the shapefile, you can review the flagged chart without GIS software. Open the AAA
+In addition to the shapefile, you can review the flagged chart without GIS software using this file. The table is structured like this:
+
+|
 
 ## Contributing
 
