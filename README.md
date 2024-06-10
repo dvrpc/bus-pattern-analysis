@@ -9,15 +9,13 @@ Missing intro about this project to be added.
 - Download and install R Studio from https://www.rstudio.com/products/rstudio/#Desktop
 - Open the code files directly in R studio. If needed, push commits through GitHub desktop.
 - Create the *.Renviron* files <br>
-  The *.Renviron* file includes secrets in this format:
+  The *.Renviron* file includes these two secret paths in this format:
+  
   ```cmd
-  password1=password_without_quotation_marks
-  pasword2=0000
-  path1=C:/path/to/specific/folder
+import_folder="path/to/import_folder/with_files"
+export_folder=="path/to/export_folder"
   ```
-  The files can be created in R studio through Files -> New Files -> Text File (and set up the .Renviron as type when saving.) <br>Alternatively, download the *.Renviron.Example* file to the folder from the repository, edit the secrets, and rename the file to *.Renviron*.<br>
-
-MISSING THE TEMPLATE, TO BE ADDED
+  The .Renviron file can be created in R studio through Files -> New Files -> Text File (and set up the .Renviron as type when saving.) <br>Alternatively, download the *.Renviron.Example* file to the folder from the repository, edit the secrets, and rename the file to *.Renviron*.<br>
 
   The beginning of each code file calls on the Renviron within its folder, then calls the relevant secrets:
   ```cmd
