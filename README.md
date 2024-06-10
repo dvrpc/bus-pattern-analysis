@@ -26,26 +26,14 @@ Missing intro about this project to be added.
 - Install all libraries before running them for the first time:
   ```cmd
   install.packages("name_of_package")
+  library(name_of_package)
   ```
 ### Dependencies
 
-
-- **Tidycensus** <br>
-  This code utilized the get_acs function from *tidycensus* library. <br>
-  To start working with tidycensus, users to set their Census API key. Request a key through [http://api.census.gov/data/key_signup.html.](https://api.census.gov/data/key_signup.html) ,<br>
-  After obtaining a key, install/call these two libraries and the key:
-
-  ```cmd
-  
-  # install.packages("tidycensus")
-  # install.packages("tidyverse")
-  
-  library(tidycensus)
-  library(tidyverse)
-  
-  census_api_key("YOUR API KEY GOES HERE")
-  ```
-  R studio saves the key for future use, so unless you wish to change the key, you don't have to run the census_api_key line every time. 
+These two code files utilize these three R packages:
+- **dplyr**
+- **sf**
+- **tidyverse**
 
 ## Usage
 
