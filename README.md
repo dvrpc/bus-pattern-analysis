@@ -1,4 +1,4 @@
-# bus-pattern-analysis
+# Bus Pattern Analysis
 
 Missing intro about this project to be added. 
 
@@ -58,7 +58,11 @@ These two code files utilize these three R packages:
 
 ## Reviewing pattern analysis output
 
+### matrix_mapped.shp
 MISSING TEXT HERE
+
+### flagged_matrix.csv
+In addition to the shapefile, you can review the flagged chart without GIS software. Open the AAA
 
 ## Contributing
 
