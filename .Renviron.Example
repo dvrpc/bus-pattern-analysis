@@ -1,0 +1,2 @@
+import_folder="path/to/import_folder/with_files"
+export_folder="path/to/export_folder"
