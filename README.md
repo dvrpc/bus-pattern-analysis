@@ -52,9 +52,9 @@ These two code files utilize these three R packages:
 6. Manually flag abnormal patterns in the exported pattern dictionary CSV file.<br>Write 'T' under the *flagged_pattern* column to flag a pattern, then save the file. Flagging is to be carried by the planning/reviewing team's discretion. See the overall how-to guide by DVRPC's OTBP team for recommendations and a detailed explanation.<br><br>
 7. Run ‘part 2’ R code:<br>
    - Open *part2_routes_and_matrix.r* from the cloned repository directly in Rstudio
-   - number of SEPTA???
    - Run the code
-   - Expected output to export folder: matrix_mapped.shp, flagged_matrix.csv<br><br>
+   - Expected output to export folder: matrix_mapped.shp, flagged_matrix.csv
+   - *Note: if a segment had missing values for at least one of the five time-intervals buckets, it will be dropped and will not appear in either of the outputted files*<br><br>
 
 ## Reviewing pattern analysis output
 
