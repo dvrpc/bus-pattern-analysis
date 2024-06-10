@@ -55,7 +55,6 @@ matrix_with_geom_filtered$evening_t <- ifelse(matrix_with_geom_filtered$evening 
 matrix_with_geom <- st_sf(matrix_with_geom_filtered, sf_column_name = "line_geometry")
 matrix_without_geom <- matrix_with_geom %>% st_set_geometry(NULL)
 
-colnames(matrix_without_geom)
 # reorganize columns:
 matrix_without_geom <- matrix_without_geom %>% select(stops_id,
                                                       early_am,am_rush,midday,pm_rush,evening,
