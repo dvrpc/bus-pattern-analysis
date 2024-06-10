@@ -12,8 +12,10 @@ Missing intro about this project to be added.
   The *.Renviron* file includes these two secret paths in this format:
   
   ```cmd
+  
 import_folder="path/to/import_folder/with_files"
-export_folder=="path/to/export_folder"
+export_folder="path/to/export_folder"
+
   ```
   The .Renviron file can be created in R studio through Files -> New Files -> Text File (and set up the .Renviron as type when saving.) <br>Alternatively, download the *.Renviron.Example* file to the folder from the repository, edit the secrets, and rename the file to *.Renviron*.<br>
 
