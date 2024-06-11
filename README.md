@@ -1,12 +1,12 @@
 # Bus Pattern Analysis
 
 The Delaware Valley Regional Planning Commission (DVRPC) partnered with the City of Philadelphia’s Office of Transportation and Infrastructure Systems (OTIS) to create a guide to identify and diagnose sources of bus delay on a roadway segment or corridor and recommend a design intervention to remedy the delay. This guide is designed to be used by OTIS's internal and external partners.<br><br>
-Part 2, step 4 of the guide, instructs highlighting abnormal speed patterns. This repository includes the code and instructions for this step.<br><br>
+Part 2, step 4 of the guide, instructs highlighting abnormal speed patterns. This repository includes the code and instructions for this step.
 
 ### Speed patterns definition (in this context)
 
 Speed patterns refer to code-based simplified/abstracted reading of the AVL data available in Swift.ly and are calculated separately for each predefined time-interval. 
-The high-resolution AVL data is provided in segments that are the same in length so that between each two stops on a route, the overall number of segments **can differ**. Each segment includes a numeric median speed value. Using Swift.ly-based speed buckets, the code first translates these buckets into text form. Then, it simplified each between-stop overall path into a pattern **regardless of the count of segments**, by only naming the **changing** speed.<br>Here is a (simplified) example:
+The high-resolution AVL data is provided in segments that are the same in length so that between each two stops on a route, the overall number of segments **can differ**. Each segment includes a numeric median speed value. Using Swift.ly-based speed buckets, the code first translates these buckets into text form. Then, it simplified each between-stop overall path into a pattern **regardless of the count of segments**.<br><br>Here is a (simplified) example:
 
 ```mermaid
   graph LR;
@@ -15,7 +15,8 @@ The high-resolution AVL data is provided in segments that are the same in length
       D[ stop 003_to_004: high-med-med-low-med-med ]-->E[Pattern_B: high-med-low-med];
 ```
 
-ADD A NOTE ABOUT CHANGING THE BUCKETS THRESHOLD!
+> [!NOTE]  
+> The current speed thresholds in the code are taken from Swift.ly definitions. To modify the thresholds or the overall amount of buckets, edit *part 1* R code, lines 18-25 *add_speed_med_def* function.
 
 ### What are abnormal speed patterns?
 
