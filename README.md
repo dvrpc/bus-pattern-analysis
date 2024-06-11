@@ -5,8 +5,17 @@ Part 2, step 4 of the guide, instructs highlighting abnormal speed patterns. Thi
 
 ### Speed patterns definition (in this context)
 
-MISSING TEXT
-Speed patterns refer to code-based simplified/abstracted reading of the AVL data available in Swift.ly and are calculated separately for each one of the predefined five-time intervals. 
+Speed patterns refer to code-based simplified/abstracted reading of the AVL data available in Swift.ly and are calculated separately for each predefined time-interval. 
+The high-resolution AVL data is provided in segments that are the same in length so that between each two stops on a route, the overall number of segments **can differ**. Each segment includes a numeric median speed value. Using Swift.ly-based speed buckets, the code first translates these buckets into text form. Then, it simplified each between-stop overall path into a pattern **regardless of the count of segments**, by only naming the **changing** speed.<br>Here is a (simplified) example:
+
+```mermaid
+  graph LR;
+      A[ stop 001_to_002: high-med-med-low-high-high ]-->B[Pattern_A: high-med-low-high];
+      C[ stop 002_to_003: high-high-med-med-low-low-high ]-->B;
+      D[ stop 003_to_004: high-med-med-low-med-med ]-->E[Pattern_B: high-med-low-med];
+```
+
+ADD A NOTE ABOUT CHANGING THE BUCKETS THRESHOLD!
 
 ### What are abnormal speed patterns?
 
