@@ -84,11 +84,4 @@ In addition to the shapefile, you can review the flagged chart without GIS softw
 Columns two to six of the output table provide the speed pattern of a specific segment throughout the day. The last five columns indicate if the team flagged one or more of the time intervals as abnormal. 
 The file allows for filtering abnormal segments and conditional formatting of results if needed.
 
-## Contributing
-
-NA
-
-## Credits
-
-NA
 
