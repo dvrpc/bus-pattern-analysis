@@ -61,7 +61,7 @@ These two code files utilize these three R packages:
 ### matrix_mapped.shp
 MISSING TEXT HERE
 
-[ArcGIS Pro query](arcgis_query_image.JPG)
+![ArcGIS Pro query](images/arcgis_query_image.JPG)
 
 ### flagged_matrix.csv
 In addition to the shapefile, you can review the flagged chart without GIS software using this file. The table is structured like this:
