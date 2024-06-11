@@ -59,19 +59,20 @@ These two code files utilize these three R packages:
 ## Reviewing pattern analysis output
 
 ### matrix_mapped.shp
-MISSING TEXT HERE
+
+The second code produces a shapefile that allows mapping the abnormal pattern results. To do so, open the file using GIS software, such as ArcGIS Pro. In ArcGIS Pro, you can then add a definition query to the layer to present only the abnormal segments (all or from a specific time of day; modify the statement as needed). It is useful to add SEPTA's stop points shapefile to this map to see (and possibly label) the specific route's stops. This map can be used to select points for direct observations for the corridor study. 
 
 ![ArcGIS Pro query](images/arcgis_query_image.JPG)
 
 ### flagged_matrix.csv
-In addition to the shapefile, you can review the flagged chart without GIS software using this file. The table is structured like this:
+In addition to the shapefile, you can review the flagged chart without GIS software using this file.
 
 | stops_id | early_am | am_rush | midday | pm_rush | evening | early_am_t | am_rush_t | midday_t | pm_rush_t | evening_t |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 001_to_002 | pattern | pattern | pattern | pattern | pattern | FALSE | TRUE | TRUE | FALSE | FALSE |
 
-Columns two to six provide the speed pattern of a specific segment thrughout the day. The last five columns indicate if the team flagged one or more of the time intervals as abnormal. 
-The file allows filtering of abnormal patterns/segments and conditional formatting of result if needed.
+Columns two to six of the output table provide the speed pattern of a specific segment throughout the day. The last five columns indicate if the team flagged one or more of the time intervals as abnormal. 
+The file allows for filtering abnormal segments and conditional formatting of results if needed.
 
 ## Contributing
 
