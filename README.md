@@ -20,7 +20,8 @@ The high-resolution AVL data is provided in segments that are the same in length
 
 ### What are abnormal speed patterns?
 
-MISSING TEXT
+Abnormal patterns are decided at the planning team's discretion while accounting for the specific corridor reviewed. Generally, buses gain speed after each stop and reduce speed near the next one. Abnormal patterns would be ones where there is one (or more) decline in speed midway. For example: <br><br>
+
 
 ## Installation/Setup
 
