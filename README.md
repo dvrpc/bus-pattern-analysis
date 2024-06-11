@@ -1,6 +1,10 @@
 # Bus Pattern Analysis
 
-Missing intro about this project to be added. 
+The Delaware Valley Regional Planning Commission (DVRPC) partnered with the City of Philadelphia’s Office of Transportation and Infrastructure Systems (OTIS) to create a guide to identify and diagnose sources of bus delay on a roadway segment or corridor and recommend a design intervention to remedy the delay. This guide is designed to be used by OTIS's internal and external partners.<br><br>
+Part 2, step 4 of the guide, instructs highlighting abnormal speed patterns. This repository includes the code and detailed instructions for this step.<br><br>
+
+
+
 
 ## Installation/Setup
 
