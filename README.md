@@ -74,13 +74,15 @@ These two code files utilize these three R packages:
    - Open *part2_routes_and_matrix.r* from the cloned repository directly in Rstudio
    - Run the code
    - Expected output to export folder: matrix_mapped.shp, flagged_matrix.csv
-   - *Note: if a segment had missing values for at least one of the five time-intervals buckets, it will be dropped and will not appear in either of the outputted files*<br><br>
+
+> [!NOTE]  
+> If a segment had missing (NA) values for at least one of the five time-intervals buckets, it will be dropped and will not appear in either of the outputted files
 
 ## Reviewing pattern analysis output
 
 ### matrix_mapped.shp
 
-The second code produces a shapefile that allows mapping the abnormal pattern results. To do so, open the file using GIS software, such as ArcGIS Pro. In ArcGIS Pro, you can then add a definition query to the layer to present only the abnormal segments (all or from a specific time of day; modify the statement as needed). It is useful to add SEPTA's stop points shapefile to this map to see (and possibly label) the specific route's stops. This map can be used to select points for direct observations for the corridor study. 
+The second code produces a shapefile that allows mapping the abnormal pattern results. To do so, open the file using GIS software, such as ArcGIS Pro. In ArcGIS Pro, you can then add a definition query to the layer to present only the abnormal segments (all or from a specific time of day; modify the statement as needed). It is useful to add SEPTA's stop points shapefile to this map to see (and possibly label) the specific route's stops. This map can be used to select points for direct observations for the corridor study. <br><br>
 
 ![ArcGIS Pro query](images/arcgis_query_image.JPG)
 
