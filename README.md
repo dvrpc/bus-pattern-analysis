@@ -86,9 +86,13 @@ These two code files utilize these three R packages:
 
 ### matrix_mapped.shp
 
-The second code produces a shapefile that allows mapping the abnormal pattern results. To do so, open the file using GIS software, such as ArcGIS Pro. In ArcGIS Pro, you can then add a definition query to the layer to present only the abnormal segments (all or from a specific time of day; modify the statement as needed). It is useful to add SEPTA's stop points shapefile to this map to see (and possibly label) the specific route's stops. This map can be used to select points for direct observations for the corridor study. <br><br>
+The second code produces a shapefile that allows mapping the abnormal pattern results. To do so, open the file using GIS software, such as ArcGIS Pro. In ArcGIS Pro, you can then add a definition query to the layer to present only the abnormal segments (all or from a specific time of day; modify the statement as needed).<br> It is useful to add SEPTA's stop points and SEPTA's route line shapefiles to this map to see (and possibly label) the specific route's stops. This map can be used to select points for direct observations for the corridor study. <br><br>
 
 ![ArcGIS Pro query](images/arcgis_query_image.JPG)
+
+> [!NOTE]  
+> * The code connects each two stops with a linear line. Where there are curves (for example, the bus is turning around a square) the lines will not reflect it. So, it is helpful to add the overall SEPTA's route line, that is not divided into segments, as a background layer to the map<br><br>
+> * Some segments that could be flagged as abnormal are with irregular road shape (a curve the bus needs to slow down in), or with a visible intersecting road that might cause the slow down middway. Review the outputted shapefile on a map to possibly eliminate these as direct observation locations. 
 
 ### flagged_matrix.csv
 In addition to the shapefile, you can review the flagged chart without GIS software using this file.
